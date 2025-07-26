@@ -1,6 +1,6 @@
-function firstLetterUpperCase (name:string) {
+function firstLetterUpperCase (name:string) : string {
     let firstLetter = name.charAt(0).toUpperCase
-    return `${firstLetter}${name.substring(1)}`
+    return firstLetter + name.substring(1)
     
 }
-console.log(firstLetterUpperCase("pedro"))
+let nome =console.log(firstLetterUpperCase("pedro"))
