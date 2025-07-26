@@ -1,6 +1,14 @@
-function firstLetterUpperCase (name:string) : string {
-    let firstLetter = name.charAt(0).toUpperCase
-    return firstLetter + name.substring(1)
-    
+function resumo (
+    usuario: {nome:string, idade:number}, 
+    escolaridade: {nivel:string}
+) { // pode separar por ;
+    return `Olá ${usuario.nome}, você tem ${usuario.idade}, e está no nível ${escolaridade.nivel}`
 }
-let nome =console.log(firstLetterUpperCase("pedro"))
+let user = {
+    nome: "pedro",
+    idade: 90
+}
+let estudos = {
+    nivel: "superior"
+}
+console.log(resumo(user, estudos))
