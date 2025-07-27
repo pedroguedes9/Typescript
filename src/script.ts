@@ -1,2 +1,4 @@
-let idadeField = document.querySelector("#idade") as HTMLInputElement
-console.log(idadeField?.value)
+type QualquerFuncao = () => void
+const algo: QualquerFuncao = () => {
+    return "blabla"
+}
